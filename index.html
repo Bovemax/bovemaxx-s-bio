@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/pfp.png" type="image/x-icon">
+    <title>bovemaxx's bio</title>
+</head>
+<body>
+    <div id="introSequence">
+        <img id="introImage" src="images/tunnel.png" alt="Tunnel scene">
+        <video id="introVideo" src="videos/op.webm" playsinline style="display: none;"></video>
+    </div>
+    <canvas id="snowCanvas" style="display: none;"></canvas>
+    <div id="bioWrapper" class="bio-container" style="display: none;">
+        <div class="bio"> <div class="bio-toggle"> <i class="fas fa-chevron-right"></i>
+            </div>
+            <a href="https://chainsaw-man.fandom.com/wiki/Power" target="_blank">
+                <img class="pfp" src="images/pfp.png"/>
+            </a>
+            <p>15-yrs. old; into Speedrunning, Web Dev, Zelda games, (and Japan).</p>
+            <div class="external-links">
+                <a href="https://discord.com/users/672549690566508554" target="_blank" title="Discord"><i class="fa-brands fa-discord"></i></a>
+                <a href="#" title="Website"><i class="fas fa-globe"></i></a>
+                <a href="https://open.spotify.com/user/5k9s315fsklbu79t4cfa037lq" target="_blank" title="Spotify"><i class="fab fa-spotify"></i></a>
+                <a href="https://github.com/Bovemax" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://steamcommunity.com/id/bovemaxx/" target="_blank" title="Steam"><i class="fab fa-steam"></i></a>
+            </div>
+        </div>
+        <div class="bio-slide">
+            <h3>Audio Player</h3>
+            <div class="custom-audio-player">
+                <div class="controls">
+                    <button class="skip-backward"><i class="fas fa-backward"></i></button>
+                    <button class="play-pause"><i class="fas fa-play"></i></button>
+                    <button class="skip-forward"><i class="fas fa-forward"></i></button>
+                </div>
+                <div class="song-info">
+                    <p class="now-playing">Now playing: <span class="song-title"></span></p>
+                </div>
+            </div>
+            <audio id="audio"></audio>
+        </div>
+    </div>
+
+    <script src="js/introController.js"></script>
+    <script src="js/snowBackground.js"></script>
+    <script src="js/bioToggle.js"></script>
+    <script src="js/audioPlayer.js"></script>
+</body>
+</html>
